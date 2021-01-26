@@ -1,6 +1,6 @@
 $(function () {
   city = $('.city').val();
-  API_KEY = $('.api-key').val();
+  API_KEY = (process.env.OPEN_WEATHER_MAP_API_KEY);
 
   var url = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&APPID=' + API_KEY ;
 

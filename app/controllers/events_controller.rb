@@ -3,6 +3,8 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   def index
+    
+    @api_key = ENV['OPEN_WEATHER_MAP_API_KEY']
     @city = current_user.prefecture_id
     @events = Event.all
     @posts = Post.all.order("created_at DESC")
