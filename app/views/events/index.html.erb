@@ -1,0 +1,27 @@
+
+<div class="wrapper">
+  <div class="event-calendar" id="events_calendar">
+    <%= render partial: "calendar", locals: {events: @events} %>
+  </div>
+
+  <div class="container">
+    <input type= "hidden" value= <%= ENV['OPEN_WEATHER_MAP_API_KEY'] %> class= 'api-key' >
+    <input type= "hidden" value= <%= @city_en %> class= 'city' >
+    <p class="weather_title">〜  <%= @city %>の天気  〜</p>
+    <div class="weather" id="weather"></div>
+  </div>
+
+  <aside id="aside" style="left:-450px;">
+    <div class="aside_container">
+      <div class="posts-form">
+        <%= render 'posts/form'%>
+      </div>
+
+      <div class="posts">
+        <%= render 'posts/posts', posts: @posts %>
+      </div>
+
+      <button id="aside-button"><img src="/assets/memo-icon.png"></button>
+    </div>
+  </aside>
+</div>

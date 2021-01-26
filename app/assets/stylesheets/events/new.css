@@ -1,0 +1,49 @@
+.event-new-main {
+  width: 100%;
+  min-width: 800px;
+  height: calc(100vh-20px);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.content-input-default {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 100px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.form-wrap {
+  width: 50%;
+  background-color: white;
+  padding-bottom: 70px;
+}
+.time-form-group {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.select-time-title {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.select-time-form {
+  
+}
+
+.select-time-title {
+  height: 50px;
+}
+.datetime-select {
+  width: 65px;
+  height: 30px;
+}

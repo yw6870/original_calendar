@@ -1,0 +1,96 @@
+.simple-calendar {
+  /* border: ; */
+}
+
+table thead{
+  border-bottom: 2px double rgb(167, 167, 167);
+}
+
+table tbody{
+}
+
+.day {
+}
+
+.wday-0 {
+  background-color: rgb(249, 243, 247);
+}
+.wday-1 {
+}
+.wday-2 {}
+.wday-3 {}
+.wday-4 {}
+.wday-5 {}
+.wday-6 {
+  background-color: rgb(238, 248, 250);
+}
+
+.today {
+}
+.past {}
+.future {}
+
+.start-date {}
+
+.prev-month {}
+.next-month {}
+.current-month {}
+
+.has-events {}
+
+.calendar-heading {
+  text-decoration: none;
+  position: relative;
+}
+
+.previous-btn {
+  margin-left: 50px;
+  width: 30px;
+}
+
+.next-btn {
+  width: 30px;
+}
+
+.calendar-title-year {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.calendar-title-month {
+  font-size: 30px;
+}
+
+.new-event-btn {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #71c2f5;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  float: right;
+  margin-right: 100px;
+}
+
+.new-event-btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
+
+
+
+/* _calendar.html.erb */
+.calendar-event-title {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  border-bottom: 6px solid #c3dce7;
+}
+.calendar-event-title-li {
+  /* list-style-type: none; */
+}

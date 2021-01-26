@@ -1,0 +1,31 @@
+
+<div class="event-show-main">
+  <div class="form-wrap">
+    <div class="show-event-content">
+      <strong>予定名：</strong>
+      <p><%= @event.title %></p>
+    </div>
+
+    <div class="show-event-content">
+      <strong>内容：</strong>
+      <p><%= @event.content %></p>
+    </div>
+
+    <div class="show-event-content">
+      <strong>開始時間：</strong>
+      <p><%= l @event.start_time %></p>
+    </div>
+
+    <div class="show-event-content">
+      <strong>終了時間：</strong>
+      <p><%= l @event.end_time %></p>
+    </div>
+
+    <div class="link-btn">
+      <%= link_to 'Edit', edit_event_path(@event) %> |
+      <%= link_to 'Back', events_path %>  |
+      <%= link_to image_tag("trash_box.png", class:"trash_box"), event_path, method: :delete, data: { confirm: '削除しますか?' } %>
+    </div>
+    
+  </div>
+</div>

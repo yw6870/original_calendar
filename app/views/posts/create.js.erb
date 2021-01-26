@@ -1,0 +1,3 @@
+$("#title").val("");
+$("#body").val("");
+$('.posts').html("<%= escape_javascript(render 'posts', posts: @posts) %>");

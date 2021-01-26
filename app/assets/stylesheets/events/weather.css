@@ -1,0 +1,23 @@
+.weather_title {
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 5px solid rgb(218, 239, 247);
+}
+
+.weather {
+  display: flex;
+}
+
+.weather-report {
+  width: 300px;
+  margin-right: 5%;
+  font-size: 20px;
+}
+
+.weather-report p {
+  border-bottom: 3px solid rgb(188, 229, 249);
+}
+
+.weather-icon {
+  width : 110px;
+}

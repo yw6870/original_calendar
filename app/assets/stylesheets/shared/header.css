@@ -1,0 +1,69 @@
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 15px double rgb(218, 239, 247);
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__left {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  width: 40px;
+}
+
+.logo_title {
+  display: inline-block;
+  color: #71c2f5;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 45px;
+}
+
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #71c2f5;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin-left: 50px;
+}
+
+.nav__btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
+.nav__logout{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #71c2f5;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.nav__logout:hover{
+  opacity: 0.5;
+}

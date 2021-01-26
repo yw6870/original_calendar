@@ -1,0 +1,52 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5%;
+  height: auto;
+  overflow: scroll;
+}
+
+.event-calendar {
+  margin: 70px 0;
+}
+
+.event-list-title {
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+aside {
+  background-color: rgba(0,0,0,0.83);
+  width: 450px;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+}
+
+.aside_container {
+
+}
+
+.posts-form {
+  margin: 0;
+  padding: 0;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+}
+
+
+aside button img {
+  width: 40px;
+}
+ 
+aside button {
+  background-color: rgba(0,0,0,0.8);
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  width: 50px;
+  height: 120px;
+  margin: 0;
+  border: none;
+}

@@ -1,0 +1,35 @@
+.event-show-main {
+  width: 100%;
+  min-width: 800px;
+  height: calc(100vh-20px);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.form-wrap {
+  width: 50%;
+  background-color: white;
+}
+
+.show-event-content {
+  margin: 65px 0;
+}
+
+.show-event-content strong {
+  font-size: 20px;
+  border-bottom: 4px solid #baecf8;
+}
+
+.show-event-content p {
+  font-size: 20px;
+}
+
+.link-btn {
+  margin-top: 150px;
+  width: 250px;
+}
+
+.trash_box {
+  width: 30px;
+  float: right
+}

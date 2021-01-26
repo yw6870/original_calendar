@@ -1,0 +1,29 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+}
+
+.posts_lists_title {
+  font-size: 20px;
+  color: white;
+}
+
+.posts_lists_btn {
+  list-style: none;
+  margin-left: 330px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.posts_edit_btn {
+  color: white;
+  font-size: 15px;
+}
+
+.posts_trash_box {
+  width: 18px;
+  position: absolute;
+  right: 18px;
+  bottom: 3px;
+}

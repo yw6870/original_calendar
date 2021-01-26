@@ -1,0 +1,15 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       numbers: 数字
+       letters: 文字
+     events:
+       text: テキスト
+       image: 画像
+
+ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M"
