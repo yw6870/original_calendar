@@ -5,7 +5,7 @@
   </div>
 
   <div class="container">
-    <input type= "hidden" value= <%= ENV['OPEN_WEATHER_MAP_API_KEY'] %> class= 'api-key' >
+    <input type= "hidden" value= <%= ENV_OPEN_WEATHER_MAP_API_KEY %> class= 'api-key' >
     <input type= "hidden" value= <%= @city_en %> class= 'city' >
     <p class="weather_title">〜  <%= @city %>の天気  〜</p>
     <div class="weather" id="weather"></div>
