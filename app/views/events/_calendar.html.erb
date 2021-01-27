@@ -3,7 +3,7 @@
 
   <div>
   <% events.each do |event| %>
-    <%= link_to "・#{event.title}", event_path(event.id), class: "calendar-event-title" %>
+    <%= link_to event.title, event_path(event.id), class: "calendar-event-title" %><span class="calendar-event-time"><%= l event.start_time, format: :short %>~</span>
   <% end %>
   </div>
 <% end %>

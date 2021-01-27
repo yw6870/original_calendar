@@ -82,13 +82,16 @@
   background: #87CEFA;
 }
 
-
-
-
 /* _calendar.html.erb */
 .calendar-event-title {
   text-decoration: none;
   font-size: 15px;
   color: #000;
   border-bottom: 1px solid #7abaff;
+  margin: 0 15px;
+}
+
+.calendar-event-time {
+  color: rgba(0, 0, 0, 0.344);
+  font-size: 13px;
 }

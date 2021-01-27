@@ -1,11 +1,8 @@
 <ul class="posts-list">
-    <% posts.each do |post| %>
-         <li class="posts_lists_title">
-            <%= post.title %>
-        </li>
-        <div class="posts_lists_btn">
-            <%= link_to "編集", edit_post_path(post),class:"posts_edit_btn" %>
-            <%= link_to  image_tag("posts_trash_box.png", class:"posts_trash_box"), post_path(post), method: :delete, remote: true %>
-        </div>
-    <% end %>
+  <% posts.each do |post| %>
+      <li>
+        <span class="posts_lists_title"><%= post.title %></span>
+        <span><%= link_to  image_tag("posts_trash_box.png", class:"posts_trash_box"), post_path(post), method: :delete, data: {remote: true} %></span>
+      </li>
+  <% end %>
 </ul>

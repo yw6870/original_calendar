@@ -1,29 +1,23 @@
 .posts-list {
-  display: flex;
-  flex-direction: column;
   margin-top: 130px;
+  height: calc(100vh - 150px);
+  overflow: scroll;
+}
+
+.posts-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  margin-bottom: 20px;
 }
 
 .posts_lists_title {
-  font-size: 20px;
-  color: white;
-}
-
-.posts_lists_btn {
-  list-style: none;
-  margin-left: 330px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.posts_edit_btn {
-  color: white;
   font-size: 15px;
+  color: white;
+  margin-right: 60px;
+  overflow: scroll;
 }
 
 .posts_trash_box {
-  width: 18px;
-  position: absolute;
-  right: 18px;
-  bottom: 3px;
+  width: 15px;
 }
