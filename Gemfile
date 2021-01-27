@@ -61,5 +61,4 @@ gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'faker'
 gem 'active_hash'
-gem 'dotenv-rails'
-gem 'gon'
+gem "aws-sdk-s3", require: false
