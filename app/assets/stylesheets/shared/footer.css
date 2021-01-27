@@ -1,14 +1,8 @@
 .footer {
-  width : 100vw;
-  padding-top: 50px;
+  width : 100%;
   text-align: center;
   margin: 0 auto;
-}
-
-.footer-inner {
-  height: 40px;
-  margin: 0 auto;
-  padding: 0 5%;
   background-color: #999;
 }
+
 

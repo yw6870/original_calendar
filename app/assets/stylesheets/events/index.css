@@ -1,17 +1,14 @@
 .wrapper {
-  margin: 0 auto;
-  padding: 0 5%;
+  margin: 70px auto;
   height: auto;
   overflow: scroll;
+  padding-left: 70px;
+  padding-right: 30px;
 }
 
 .event-calendar {
-  margin: 70px 0;
-}
-
-.event-list-title {
-  font-size: 30px;
-  margin-left: 60px;
+  width: auto;
+  margin-bottom: 70px;
 }
 
 aside {
@@ -20,10 +17,6 @@ aside {
   height: 100vh;
   top: 0;
   position: fixed;
-}
-
-.aside_container {
-
 }
 
 .posts-form {

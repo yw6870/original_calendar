@@ -1,13 +1,8 @@
 .header {
   background-color: #ffffff;
   width: 100%;
-  padding: 5px 0;
-  border-bottom: 15px double rgb(218, 239, 247);
-}
-
-.header-inner {
-  margin: 0 auto;
-  padding: 0 5%;
+  padding: 5px 20px;
+  border-bottom: 15px double rgb(208, 255, 253);
 }
 
 .nav {

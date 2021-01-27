@@ -1,9 +1,9 @@
 <%= month_calendar events: events do |date, events| %>
   <%= date.day %>
 
-  <ul>
+  <div>
   <% events.each do |event| %>
-    <li class="calendar-event-title-li"><%= link_to event.title, event_path(event.id), class: "calendar-event-title" %></li>
+    <%= link_to "・#{event.title}", event_path(event.id), class: "calendar-event-title" %>
   <% end %>
-  </ul>
+  </div>
 <% end %>

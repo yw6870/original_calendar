@@ -1,7 +1,7 @@
 .weather_title {
   font-size: 25px;
   font-weight: bold;
-  border-bottom: 5px solid rgb(218, 239, 247);
+  border-bottom: 5px solid rgb(198, 242, 247);
 }
 
 .weather {
@@ -15,7 +15,7 @@
 }
 
 .weather-report p {
-  border-bottom: 3px solid rgb(188, 229, 249);
+  border-bottom: 2px solid rgb(202, 235, 252);
 }
 
 .weather-icon {
