@@ -1,8 +1,13 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<aside id="aside">
+  <div class="aside_container">
+    <div class="posts-form">
+      <%= render 'posts/form'%>
+    </div>
 
-<%= render 'form'%>
+    <div class="posts">
+      <%= render 'posts/posts', posts: @posts %>
+    </div>
 
-<div class="posts">
-  <%= render 'posts', posts: @posts %>
-</div>
+    <button id="aside-button"><img src="/assets/memo-icon.png"></button>
+  </div>
+</aside>

@@ -2,7 +2,7 @@
   <% posts.each do |post| %>
       <li>
         <span class="posts_lists_title"><%= post.title %></span>
-        <span><%= link_to  image_tag("posts_trash_box.png", class:"posts_trash_box"), post_path(post), method: :delete, data: {remote: true} %></span>
+        <span><%= link_to  image_tag("posts_trash_box.png", class:"posts_trash_box"), post_path(post), method: :delete, remote: true %></span>
       </li>
   <% end %>
 </ul>
