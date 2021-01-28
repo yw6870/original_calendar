@@ -9,24 +9,29 @@
 .simple-calendar .day {
   height: 130px;
   font-size: 18px;
+  font-family: fantasy;
 }
 
 .simple-calendar td {
   border: 1px solid rgba(116, 116, 116, 0.105);
+  font-family: fantasy;
 }
 
 .simple-calendar th {
   border: 1px solid rgba(116, 116, 116, 0.16);
   font-size: 15px;
   text-align: center;
+  font-family: fantasy;
 }
 
 .simple-calendar .wday-6 {
-  color: rgb(2, 171, 250);
+  color: rgb(2, 114, 250);
+  background-color: #ebfaff;
 }
 
 .simple-calendar .wday-0 {
   color: rgb(250, 2, 2);
+  background-color: #fff5fd;
 }
 
 .simple-calendar .prev-month {
@@ -45,6 +50,7 @@
 }
 
 .previous-btn {
+  opacity: 0.3;
   margin-left: 50px;
   width: 30px;
 }
@@ -54,13 +60,17 @@
 }
 
 .calendar-title-year {
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 40px;
   margin-right: 20px;
+  font-family: fantasy;
+  color: #0000003f;
 }
 
 .calendar-title-month {
   font-size: 30px;
+  font-family: fantasy;
+  color: #0000003a;
 }
 
 .new-event-btn {
