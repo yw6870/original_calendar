@@ -4,7 +4,23 @@
     <%= render partial: "calendar", locals: {events: @events} %>
   </div>
 
-  <div class="container">
+  <div class="event-lists-header">
+  </div>
+  <div class="event-lists">
+    <% @eventLists.each do |event| %>
+    <div class="event-list">
+      <div class="event-lists-time">
+        <p><%= l event.start_time, format: :middle %></p>
+        <p class="event-time-rotate">〜</p>
+        <p><%= l event.end_time, format: :middle %></p>
+      </div>
+      <p class="event-list-title"><%= link_to event.title, event_path(event.id)%></p>
+      <p class="event-list-content"><%= link_to event.content, event_path(event.id)%></p>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="weather-info">
     <input type= "hidden" value= <%= @city_en %> class= 'city' >
     <p class="weather_title">〜  <%= @city %>の天気  〜</p>
     <div class="weather" id="weather"></div>

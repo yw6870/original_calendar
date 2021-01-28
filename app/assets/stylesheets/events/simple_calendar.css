@@ -3,11 +3,11 @@
 .simple-calendar .today {
   font-size: 30px;
   background: #ffffff;
-  border: 8px solid #e9fcff;
+  border: 8px solid #dcf6fa;
 }
 
 .simple-calendar .day {
-  height: 160px;
+  height: 130px;
   font-size: 18px;
 }
 
@@ -83,15 +83,77 @@
 }
 
 /* _calendar.html.erb */
-.calendar-event-title {
-  text-decoration: none;
-  font-size: 15px;
-  color: #000;
-  border-bottom: 1px solid #7abaff;
-  margin: 0 15px;
+.calendar-event-title-li {
+  list-style: none;
+  padding-inline-start: 10px;
 }
 
-.calendar-event-time {
-  color: rgba(0, 0, 0, 0.344);
+.calendar-event-title {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  padding-left: 4px;
+  border-left: 9px solid #caf3fe;
+  border-radius: 4px;
+}
+
+.event-lists {
+  height: 500px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.228);
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+
+.event-list {
+  margin: 0 60px 0 60px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.228);
+}
+
+.event-lists-time {
+  width: 100px;
+  color: rgba(0, 0, 0, 0.372);
+  display: inline-block;
+  vertical-align: middle; 
   font-size: 13px;
+}
+
+.event-lists-time p  {
+  text-align: center;
+}
+
+.event-time-rotate {
+  text-align: center;
+  transform:rotate(90deg); 
+}
+
+.event-list-title {
+  margin: 0 30px;
+  width: 140px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+
+.event-list-title a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+}
+
+.event-list-content {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle; 
+  width: 50%;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+
+.event-list-content a {
+  text-decoration: none;
+  color: #000;
 }
