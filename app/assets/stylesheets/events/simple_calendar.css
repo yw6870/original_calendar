@@ -23,38 +23,38 @@
   text-align: center;
 }
 .simple-calendar th:nth-child(1):before {
-  font-size: 15px;
+  font-size: 17px;
   content: "Mon";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(2):before {
-  font-size: 15px;
+  font-size: 17px;
   content: "Tue";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(3):before {
-  font-size: 15px;
+  font-size: 17px;
   content: "Wed";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(4):before {
-  font-size: 15px;
+  font-size: 17px;
   content: "Thu";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(5):before {
-  font-size: 15px;
+  font-size: 17px;
   content: "Fri";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(6):before {
-  font-size: 15px;
+  font-size: 17px;
   /* color: rgb(2, 114, 250); */
   content: "Sat";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(7):before {
-  font-size: 15px;
+  font-size: 17px;
   /* color: rgb(250, 2, 2); */
   content: "Sun";
   font-family: fantasy;
