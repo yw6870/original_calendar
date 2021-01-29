@@ -1,4 +1,4 @@
-.event-new-main {
+.event-edit-main {
   width: 100%;
   min-width: 800px;
   height: calc(100vh-20px);
@@ -7,30 +7,34 @@
   justify-content: center;
 }
 
-.event-new-wrap {
+.event-edit-wrap {
   width: 60%;
   padding-bottom: 70px;
 }
 
-.event-new-header {
+.event-edit-header {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.content-input-default {
+.event-edit-form-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-edit-content-input-default {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 20px;
-  height: 100px;
+  height: 400px;
   padding: 10px 16px 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  background: #fff;
   font-size: 16px;
   resize: none;
 }
 
-.event-new-time-form-group {
+.event-edit-time-form-group {
   margin: 0 auto;
   padding-top: 20px;
 }

@@ -8,7 +8,7 @@
 
 .simple-calendar .day {
   height: 130px;
-  font-size: 20px;
+  font-size: 17px;
   font-family: fantasy;
 }
 
@@ -23,38 +23,38 @@
   text-align: center;
 }
 .simple-calendar th:nth-child(1):before {
-  font-size: 17px;
+  font-size: 15px;
   content: "Mon";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(2):before {
-  font-size: 17px;
+  font-size: 15px;
   content: "Tue";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(3):before {
-  font-size: 17px;
+  font-size: 15px;
   content: "Wed";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(4):before {
-  font-size: 17px;
+  font-size: 15px;
   content: "Thu";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(5):before {
-  font-size: 17px;
+  font-size: 15px;
   content: "Fri";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(6):before {
-  font-size: 17px;
+  font-size: 15px;
   /* color: rgb(2, 114, 250); */
   content: "Sat";
   font-family: fantasy;
 }
 .simple-calendar th:nth-child(7):before {
-  font-size: 17px;
+  font-size: 15px;
   /* color: rgb(250, 2, 2); */
   content: "Sun";
   font-family: fantasy;
@@ -98,7 +98,7 @@
 }
 
 .calendar-title-year {
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 40px;
   margin-right: 20px;
   font-family: fantasy;
@@ -106,7 +106,7 @@
 }
 
 .calendar-title-month {
-  font-size: 30px;
+  font-size: 25px;
   font-family: fantasy;
   color: #0000003a;
 }
@@ -138,7 +138,7 @@
 
 .calendar-event-title {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   color: #000;
   padding-left: 4px;
   border-left: 9px solid #caf3fe;
@@ -146,7 +146,7 @@
 }
 
 .event-lists {
-  height: 800px;
+  max-height: 600px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.228);
   overflow: scroll;
@@ -189,7 +189,7 @@
 .event-list-title a {
   text-decoration: none;
   color: #000;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .event-list-content {
@@ -204,4 +204,5 @@
 .event-list-content a {
   text-decoration: none;
   color: #000;
+  font-size: 14px;
 }
