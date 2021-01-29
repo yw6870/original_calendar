@@ -1,9 +1,7 @@
 .wrapper {
-  margin: 70px auto;
   height: auto;
   overflow: scroll;
-  padding-left: 70px;
-  padding-right: 30px;
+  padding: 50px 30px 60px 70px;
 }
 
 .event-calendar {
@@ -12,7 +10,7 @@
 }
 
 aside {
-  background-color: rgba(0, 0, 0, 0.571);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 450px;
   height: 100vh;
   top: 0;
@@ -33,7 +31,7 @@ aside button img {
 }
  
 aside button {
-  background-color: rgba(0, 0, 0, 0.571);
+  background-color: rgba(0, 0, 0, 0.6);
   display: block;
   position: absolute;
   top: 150px;
@@ -42,4 +40,5 @@ aside button {
   height: 120px;
   margin: 0;
   border: none;
+  outline:none;
 }

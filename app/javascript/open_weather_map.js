@@ -36,9 +36,11 @@ function buildHTML(data, i) {
   var html =
     '<div class="weather-report">' +
       '<img class="weather-icon" src="https://openweathermap.org/img/w/' + icon + '.png">' +
-      '<p class="weather-date">' + day + "</p>" +
-      '<p class="weather-temp-max">' + '最高：' + Math.round(data.list[i].main.temp_max) + "℃</p>" +
-      '<p class="weather-temp-min">' + '最低：' + Math.floor(data.list[i].main.temp_min) + "℃</p>" +
+      '<div class="weather-info">' +
+        '<p class="weather-date">' + day + "</p>" +
+        '<p class="weather-temp-max">' + '最高：' + Math.round(data.list[i].main.temp_max) + "℃</p>" +
+        '<p class="weather-temp-min">' + '最低：' + Math.floor(data.list[i].main.temp_min) + "℃</p>" +
+      '</div>' +
     '</div>';
   return html
 }

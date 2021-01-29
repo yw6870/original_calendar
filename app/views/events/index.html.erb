@@ -1,5 +1,11 @@
 
 <div class="wrapper">
+  <div class="weather-forecast">
+    <input type= "hidden" value= <%= @city_en %> class= 'city' >
+    <p class="weather-title">Weather forecast : <%= @city %></p>
+    <div class="weather" id="weather"></div>
+  </div>
+
   <div class="event-calendar" id="events_calendar">
     <%= render partial: "calendar", locals: {events: @events} %>
   </div>
@@ -20,11 +26,7 @@
     <% end %>
   </div>
 
-  <div class="weather-info">
-    <input type= "hidden" value= <%= @city_en %> class= 'city' >
-    <p class="weather_title">〜  <%= @city %>の天気  〜</p>
-    <div class="weather" id="weather"></div>
-  </div>
+
 
   <aside id="aside" style="left:-450px;">
     <div class="aside_container">
@@ -36,7 +38,7 @@
         <%= render 'posts/posts', posts: @posts %>
       </div>
 
-      <button id="aside-button"><%= image_tag("logo.png", class: :logo) %></button>
+      <button id="aside-button"><img src="/assets/memo-icon.png"></button>
     </div>
   </aside>
 </div>

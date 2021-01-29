@@ -1,27 +1,32 @@
-.weather-info {
-  margin-top: 50px;
+.weather-forecast {
+  margin-bottom: 50px;
 }
 
-.weather_title {
-  font-size: 25px;
-  font-weight: bold;
-  border-bottom: 5px solid rgb(198, 242, 247);
+.weather-title {
+  display: inline-block;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: fantasy;
 }
 
 .weather {
   display: flex;
+  justify-content: space-between;
 }
 
 .weather-report {
-  width: 300px;
-  margin-right: 5%;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
 }
 
 .weather-report p {
-  border-bottom: 2px solid rgb(202, 235, 252);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .weather-icon {
-  width : 110px;
+  height: 80px;
+  width : 80px;
 }
