@@ -3,30 +3,73 @@
 .simple-calendar .today {
   font-size: 30px;
   background: #ffffff;
-  border: 8px solid #e9fcff;
+  border: 8px solid #dcf6fa;
 }
 
 .simple-calendar .day {
-  height: 160px;
+  height: 130px;
   font-size: 18px;
+  font-family: fantasy;
 }
 
 .simple-calendar td {
   border: 1px solid rgba(116, 116, 116, 0.105);
+  font-family: fantasy;
 }
-
+/* ↓↓↓　カレンダーヘッダー曜日部分 */
 .simple-calendar th {
+  font-size: 0;
   border: 1px solid rgba(116, 116, 116, 0.16);
-  font-size: 15px;
   text-align: center;
 }
+.simple-calendar th:nth-child(1):before {
+  font-size: 15px;
+  content: "Mon";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(2):before {
+  font-size: 15px;
+  content: "Tue";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(3):before {
+  font-size: 15px;
+  content: "Wed";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(4):before {
+  font-size: 15px;
+  content: "Thu";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(5):before {
+  font-size: 15px;
+  content: "Fri";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(6):before {
+  font-size: 15px;
+  /* color: rgb(2, 114, 250); */
+  content: "Sat";
+  font-family: fantasy;
+}
+.simple-calendar th:nth-child(7):before {
+  font-size: 15px;
+  /* color: rgb(250, 2, 2); */
+  content: "Sun";
+  font-family: fantasy;
+}
+/* ↑↑↑　カレンダーヘッダー曜日部分 */
+
 
 .simple-calendar .wday-6 {
-  color: rgb(2, 171, 250);
+  /* color: rgb(2, 114, 250); */
+  background-color: #f0fbff;
 }
 
 .simple-calendar .wday-0 {
-  color: rgb(250, 2, 2);
+  /* color: rgb(250, 2, 2); */
+  background-color: #fff1fc;
 }
 
 .simple-calendar .prev-month {
@@ -45,6 +88,7 @@
 }
 
 .previous-btn {
+  opacity: 0.3;
   margin-left: 50px;
   width: 30px;
 }
@@ -54,13 +98,17 @@
 }
 
 .calendar-title-year {
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 40px;
   margin-right: 20px;
+  font-family: fantasy;
+  color: #0000003f;
 }
 
 .calendar-title-month {
   font-size: 30px;
+  font-family: fantasy;
+  color: #0000003a;
 }
 
 .new-event-btn {
@@ -83,15 +131,77 @@
 }
 
 /* _calendar.html.erb */
-.calendar-event-title {
-  text-decoration: none;
-  font-size: 15px;
-  color: #000;
-  border-bottom: 1px solid #7abaff;
-  margin: 0 15px;
+.calendar-event-title-li {
+  list-style: none;
+  padding-inline-start: 10px;
 }
 
-.calendar-event-time {
-  color: rgba(0, 0, 0, 0.344);
+.calendar-event-title {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  padding-left: 4px;
+  border-left: 9px solid #caf3fe;
+  border-radius: 4px;
+}
+
+.event-lists {
+  height: 800px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.228);
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+
+.event-list {
+  margin: 0 60px 0 60px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.228);
+}
+
+.event-lists-time {
+  width: 100px;
+  color: rgba(0, 0, 0, 0.372);
+  display: inline-block;
+  vertical-align: middle; 
   font-size: 13px;
+}
+
+.event-lists-time p  {
+  text-align: center;
+}
+
+.event-time-rotate {
+  text-align: center;
+  transform:rotate(90deg); 
+}
+
+.event-list-title {
+  margin: 0 30px;
+  width: 140px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+
+.event-list-title a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+}
+
+.event-list-content {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle; 
+  width: 50%;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+
+.event-list-content a {
+  text-decoration: none;
+  color: #000;
 }

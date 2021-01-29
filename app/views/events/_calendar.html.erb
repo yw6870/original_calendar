@@ -1,9 +1,9 @@
 <%= month_calendar events: events do |date, events| %>
   <%= date.day %>
 
-  <div>
-  <% events.each do |event| %>
-    <%= link_to event.title, event_path(event.id), class: "calendar-event-title" %><span class="calendar-event-time"><%= l event.start_time, format: :short %>~</span>
-  <% end %>
-  </div>
+  <ul class="calendar-event-title-li">
+    <% events.each do |event| %>
+      <li><%= link_to event.title, event_path(event.id), class: "calendar-event-title" %></li>
+    <% end %>
+  </ul>
 <% end %>

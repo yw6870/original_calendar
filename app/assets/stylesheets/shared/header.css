@@ -2,7 +2,7 @@
   background-color: #ffffff;
   width: 100%;
   padding: 5px 20px;
-  border-bottom: 15px double rgb(208, 255, 253);
+  border-bottom: 2px solid rgb(150, 150, 150);
 }
 
 .nav {
@@ -20,15 +20,18 @@
   position: absolute;
   bottom: 10px;
   width: 40px;
+  opacity: 0.45;
 }
 
 .logo_title {
   display: inline-block;
-  color: #71c2f5;
+  font-family: fantasy;
+  color: #878787;
   font-size: 16px;
   font-weight: bold;
   padding-left: 45px;
 }
+
 
 .nav__btn{
   display: inline-block;
