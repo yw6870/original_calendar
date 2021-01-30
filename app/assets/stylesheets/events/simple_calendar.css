@@ -1,9 +1,8 @@
 
 
 .simple-calendar .today {
-  font-size: 30px;
-  background: #ffffff;
-  border: 8px solid #dcf6fa;
+  background: none;
+  border: 2px solid #c9beac8e;
 }
 
 .simple-calendar .day {
@@ -69,7 +68,7 @@
 
 .simple-calendar .wday-0 {
   /* color: rgb(250, 2, 2); */
-  background-color: #fff1fc;
+  background-color: #fff1fb;
 }
 
 .simple-calendar .prev-month {
@@ -102,23 +101,23 @@
   margin-left: 40px;
   margin-right: 20px;
   font-family: fantasy;
-  color: #0000003f;
+  color: #c9beac;
 }
 
 .calendar-title-month {
   font-size: 25px;
   font-family: fantasy;
-  color: #0000003a;
+  color: #c9beac;
 }
 
 .new-event-btn {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #71c2f5;
+  color: #c9beac;;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px solid #c9beac;
   border-radius: 3px;
   transition: 0.4s ease;
   float: right;
@@ -127,7 +126,7 @@
 
 .new-event-btn:hover{
   color: #fff;
-  background: #87CEFA;
+  background: #c9beac;
 }
 
 /* _calendar.html.erb */
