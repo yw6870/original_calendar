@@ -26,10 +26,10 @@
 .logo_title {
   display: inline-block;
   font-family: fantasy;
-  color: #878787;
+  color: #c5b59c;
   font-size: 16px;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 
@@ -37,10 +37,10 @@
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #71c2f5;
+  color: #c9beac;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px #c9beac solid;
   border-radius: 3px;
   transition: 0.4s ease;
   margin-left: 50px;
@@ -48,20 +48,21 @@
 
 .nav__btn:hover{
   color: #fff;
-  background: #87CEFA;
+  background: #c9beac;
 }
 
 .nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #71c2f5;
+  color: #c9beac;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px #c9beac solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__logout:hover{
-  opacity: 0.5;
+  color: #fff;
+  background: #c9beac;
 }

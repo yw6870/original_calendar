@@ -1,29 +1,27 @@
 <%= form_for(@event) do |f| %>
 <div class="event-new-main">
-  <div class="form-wrap">
-    <div class='form-header'>
-      <h1 class='form-header-text'>
-        New Event
-      </h1>
-    </div>
+  <div class="event-new-wrap">
+    <h1 class='event-new-header'>
+      New Event
+    </h1>
 
     <%= render 'shared/error_messages', model: f.object %>
 
-    <div class="form-group">
+    <div class="event-new-form-group">
       <div class='form-text-wrap'>
         <%= f.label :title, class:"form-text" %>
       </div>
       <%= f.text_field :title, class:"input-default", placeholder:"予定を入力してください" %>
     </div>
 
-    <div class="form-group">
+    <div class="event-new-form-group">
       <div class='form-text-wrap'>
         <%= f.label :content, class:"form-text" %>
       </div>
       <%= f.text_area :content, class:"content-input-default", placeholder:"内容を入力してください" %>
     </div>
 
-    <div class="time-form-group">
+    <div class="event-new-time-form-group">
       <div class="select-time-title">
         <%= f.label :start_time, class:"form-text" %>
       </div>
@@ -32,7 +30,7 @@
       </label>
     </div>
 
-    <div class="time-form-group">
+    <div class="event-new-time-form-group">
       <div class="select-time-title">
         <%= f.label :end_time, class:"form-text" %>
       </div>

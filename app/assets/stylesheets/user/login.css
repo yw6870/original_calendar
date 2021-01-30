@@ -6,13 +6,19 @@
 
 .login-blue-btn {
   width: 100%;
-  background: #3fa6c5;
-  border: 1px solid #3fa6c5;
-  color: #fff;
+  background: #ffffff;
+  border: 1px solid #a59b8b;
+  color: #a09c96;
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
   margin-top: 100px;
+  transition: 0.4s ease;
+}
+
+.login-blue-btn:hover{
+  color: #fff;
+  background: #a59b8b;
 }
 
 .login-flash-message {

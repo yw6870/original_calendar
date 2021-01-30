@@ -1,24 +1,20 @@
-
 <div class="event-show-main">
-  <div class="form-wrap">
+  <div class="event-show-wrap">
+
     <div class="show-event-content">
-      <strong>予定名：</strong>
+      <span>time：</span>
+      <p><%= l @event.start_time, format: :middle %></p>
+      <p><%= l @event.end_time, format: :middle %></p>
+    </div>
+
+    <div class="show-event-content">
+      <span>title：</span>
       <p><%= @event.title %></p>
     </div>
 
     <div class="show-event-content">
-      <strong>内容：</strong>
+      <span>content：</span>
       <p><%= @event.content %></p>
-    </div>
-
-    <div class="show-event-content">
-      <strong>開始時間：</strong>
-      <p><%= l @event.start_time %></p>
-    </div>
-
-    <div class="show-event-content">
-      <strong>終了時間：</strong>
-      <p><%= l @event.end_time %></p>
     </div>
 
     <div class="link-btn">

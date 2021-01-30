@@ -26,8 +26,13 @@ aside {
 }
 
 
-aside button img {
+#memo-icon {
   width: 40px;
+  position: absolute;
+  left: 4px;
+  top: 30px;
+  transform: scale(-1, 1);
+  filter: invert(100%);
 }
  
 aside button {
@@ -37,7 +42,7 @@ aside button {
   top: 150px;
   left: 450px;
   width: 50px;
-  height: 120px;
+  height: 100px;
   margin: 0;
   border: none;
   outline:none;

@@ -6,31 +6,34 @@
   display: flex;
   justify-content: center;
 }
-.form-wrap {
-  width: 50%;
-  background-color: white;
+.event-show-wrap {
+  width: 60%;
+  margin: 50px 0;
 }
 
 .show-event-content {
-  margin: 65px 0;
+  margin: 10px 0;
   white-space: pre-wrap;
 }
 
-.show-event-content strong {
-  font-size: 20px;
-  border-bottom: 4px solid #baecf8;
+.show-event-content span {
+  display: inline-block;
+  margin-bottom: 30px;
+  border-bottom: 3px solid rgb(214, 214, 214);
+  font-size: 23px;
 }
 
 .show-event-content p {
-  font-size: 20px;
+  display: inline-block;
+  font-size: 15px;
 }
 
 .link-btn {
   margin-top: 150px;
-  width: 250px;
+  width: 150px;
 }
 
 .trash_box {
-  width: 30px;
+  width: 25px;
   float: right
 }

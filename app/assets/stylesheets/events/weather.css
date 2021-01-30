@@ -1,5 +1,5 @@
 .weather-forecast {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .weather-title {
@@ -16,10 +16,11 @@
 
 .weather-report {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   font-size: 12px;
+  margin: 0 10px;
 }
 
 .weather-report p {
