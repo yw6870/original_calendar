@@ -10,7 +10,7 @@
 }
 
 aside {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 450px;
   height: 100vh;
   top: 0;
@@ -36,7 +36,7 @@ aside {
 }
  
 aside button {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   display: block;
   position: absolute;
   top: 150px;
