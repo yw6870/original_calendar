@@ -2,7 +2,7 @@
 
 .simple-calendar .today {
   background: none;
-  border: 2px solid #c9beac8e;
+  border: 2px solid #c2b8a98e;
 }
 
 .simple-calendar .day {
@@ -73,12 +73,12 @@
 
 .simple-calendar .prev-month {
   background: #ffffff;
-  color: rgba(0, 0, 0, 0.158);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .simple-calendar .next-month {
   background: #ffffff;
-  color: rgba(0, 0, 0, 0.158);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .calendar-heading {
@@ -87,13 +87,9 @@
 }
 
 .previous-btn {
-  opacity: 0.3;
+  opacity: 0.5;
   margin-left: 50px;
-  width: 30px;
-}
-
-.next-btn {
-  width: 30px;
+  width: 20px;
 }
 
 .calendar-title-year {
@@ -101,23 +97,23 @@
   margin-left: 40px;
   margin-right: 20px;
   font-family: fantasy;
-  color: #c9beac;
+  color: #ada393;
 }
 
 .calendar-title-month {
   font-size: 25px;
   font-family: fantasy;
-  color: #c9beac;
+  color: #a59b8c;
 }
 
 .new-event-btn {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #c9beac;;
+  color: #80786d;
   text-decoration: none;
   user-select: none;
-  border: 1px solid #c9beac;
+  border: 1px solid #80786d;
   border-radius: 3px;
   transition: 0.4s ease;
   float: right;

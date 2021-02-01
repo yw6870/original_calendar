@@ -5,6 +5,7 @@
 .weather-title {
   display: inline-block;
   margin: 0;
+  color: #80786d;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   font-family: fantasy;
 }
