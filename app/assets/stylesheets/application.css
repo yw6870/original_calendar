@@ -17,7 +17,7 @@
  
 * {
   box-sizing: border-box;
-  /* border :solid black 1px; */
+  border :solid black 1px;
 }
 
 body {
@@ -346,7 +346,7 @@ main {
   
   .event-lists-time {
     height: auto;
-    width: 85px;
+    width: 45px;
     color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     vertical-align: middle; 
@@ -365,7 +365,7 @@ main {
   
   .event-list-title {
     margin: 0;
-    width: 50px;
+    width: 90px;
     display: inline-block;
     text-align: left;
     vertical-align: middle;
@@ -377,7 +377,7 @@ main {
     align-items: center;
     text-decoration: none;
     color: #000;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   
   .event-list-content {
@@ -392,7 +392,7 @@ main {
   .event-list-content a {
     text-decoration: none;
     color: #000;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   /* simple-calendar リスト ↑↑↑ */
 
@@ -438,7 +438,7 @@ main {
     height: 50px;
   }
   .datetime-select {
-    
+
     width: 85px;
     height: 40px;
     margin: 15px 0;
