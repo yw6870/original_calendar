@@ -16,9 +16,11 @@
     <% @eventLists.each do |event| %>
     <div class="event-list">
       <div class="event-lists-time">
-        <p><%= l event.start_time, format: :middle %></p>
+        <p><%= l event.start_time, format: :yearmonth %></p>
+        <p><%= l event.start_time, format: :short %></p>
         <p class="event-time-rotate">〜</p>
-        <p><%= l event.end_time, format: :middle %></p>
+        <p><%= l event.end_time, format: :yearmonth %></p>
+        <p><%= l event.end_time, format: :short %></p>
       </div>
       <p class="event-list-title"><%= link_to event.title, event_path(event.id)%></p>
       <p class="event-list-content"><%= link_to event.content, event_path(event.id)%></p>
