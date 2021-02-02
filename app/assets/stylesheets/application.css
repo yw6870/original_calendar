@@ -46,15 +46,17 @@ main {
     top: 4px;
   }
   .logo_title {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding-left: 26px;
   }
   .nav__logout {
-    padding: 0;
+    padding: 5;
+    font-size: 0.4rem;
   }
   .nav__btn {
-    padding: 0;
+    padding: 5;
     margin: 0;
+    font-size: 0.4rem;
   }
   /* header ↑↑↑ */
 
@@ -80,6 +82,19 @@ main {
   .form-group {
     width: 100%;
     font-size: 1rem;
+  }
+  .register-blue-btn {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #80786d;
+    color: #80786d;
+    line-height: 48px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    transition: 0.4s ease;
   }
   /* registration-new ↑↑↑ */
 
