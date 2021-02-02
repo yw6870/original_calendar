@@ -1,7 +1,6 @@
 .event-new-main {
   width: 100%;
   min-width: 800px;
-  height: calc(100vh-20px);
   display: flex;
   justify-content: center;
 }
