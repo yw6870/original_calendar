@@ -13,5 +13,5 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d  %H:%M"
-      middle: "%m/%d 　%H:%M"
+      yearmonth: "%m/%d"
       short: "%H:%M"
