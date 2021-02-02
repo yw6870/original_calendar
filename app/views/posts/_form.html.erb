@@ -1,7 +1,6 @@
 <%= form_with model: @post, data: {remote: true} do |f| %>
   <div class="posts_form_container">
     <div class="posts_form_title">
-        <%= f.label :title %><br>
         <%= f.text_field :title, id: "title",placeholder: "　　　　タイトルを入力してください" %>
         <%= f.hidden_field :check, value: "false"%>
     </div>
