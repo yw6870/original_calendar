@@ -187,8 +187,8 @@ main {
 
   /* weather ↓↓↓ */
   .weather-forecast {
-    overflow: scroll;
     width: 100%;
+    overflow: none;
   }
   .weather-title {
     display: inline-block;
@@ -205,17 +205,23 @@ main {
   .weather-report {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 0.7rem;
-    margin: 0 10px;
-  }
-  .weather-report p {
+    margin: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    min-width: 0;
+  }
+  .weather-info {
+    height: auto;
+  }
+  .weather-info p{
+    display: block;
+    width: 40px;
+    font-size: 0.3rem;
   }
   .weather-icon {
-    height: 70px;
-    width : 70px;
+    height: 40px;
+    width : 40px;
   }
   /* weather ↑↑↑ */
 
