@@ -311,7 +311,7 @@ main {
   }
   .calendar-event-title {
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     color: #000;
     padding: 0px;
     margin: 0 0;
@@ -321,6 +321,7 @@ main {
   }
   .calendar-event-title-li {
     list-style: none;
+    font-size: 0.3rem;
     padding-inline-start: 0px;
   }
   /* simple-calendar ↑↑↑ */
