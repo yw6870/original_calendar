@@ -1,7 +1,6 @@
 .event-show-main {
   width: 100%;
   min-width: 800px;
-  height: calc(100vh-20px);
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -24,6 +23,7 @@
 }
 
 .show-event-content p {
+  margin: 0px;
   display: inline-block;
   font-size: 15px;
 }

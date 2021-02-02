@@ -1,16 +1,16 @@
 <ul class="posts-list">
   <% posts.each do |post| %>
     <li>
-    <%# <%= form_with model: @post, url: post_path(post), method: :put, remote: true do |f| %>
-        <%# <%= f.hidden_field :title, value: post.title %>
-        <%# <% if post.check == false %>
-            <%# <%= f.hidden_field :check, value: "true" %>
-            <%# <%= image_submit_tag "check_box.png", id: "check" %>
-        <%# <% elsif post.check == true %>
-            <%# <%= f.hidden_field :check, value: "false" %>
-            <%# <%= image_submit_tag "checked_box.png", id: "check" %>
-        <%# <% end %>
-    <%# <% end %>
+    <%= form_with model: @post, url: post_path(post), method: :put, remote: true do |f| %>
+        <%= f.hidden_field :title, value: post.title %>
+        <% if post.check == false %>
+            <%= f.hidden_field :check, value: "true" %>
+            <%= image_submit_tag "check_box.png", id: "check" %>
+        <% elsif post.check == true %>
+            <%= f.hidden_field :check, value: "false" %>
+            <%= image_submit_tag "checked_box.png", id: "check" %>
+        <% end %>
+    <% end %>
     <span class="posts_lists_title"><%= post.title %></span>
     <span><%= link_to  image_tag("posts_trash_box.png", class:"posts_trash_box"), post_path(post), method: :delete, remote: true %></span>
     </li>

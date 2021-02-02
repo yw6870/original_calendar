@@ -27,19 +27,17 @@
   </div>
 
 
+    <aside id="aside">
+      <div class="aside_container">
+        <div class="posts-form">
+          <%= render 'posts/form'%>
+        </div>
 
-  <aside id="aside" style="left:-450px;">
-  <%# <aside id="aside"> %>
-    <div class="aside_container">
-      <div class="posts-form">
-        <%= render 'posts/form'%>
+        <div class="posts">
+          <%= render 'posts/posts', posts: @posts %>
+        </div>
+
+        <button id="aside-button"><img src="/assets/memo-icon1.png" id="memo-icon"></button>
       </div>
-
-      <div class="posts">
-        <%= render 'posts/posts', posts: @posts %>
-      </div>
-
-      <button id="aside-button"><img src="/assets/memo-icon1.png" id="memo-icon"></button>
-    </div>
-  </aside>
+    </aside>
 </div>

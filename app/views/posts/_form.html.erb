@@ -1,10 +1,9 @@
 <%= form_with model: @post, data: {remote: true} do |f| %>
   <div class="posts_form_container">
     <div class="posts_form_title">
-        <%= f.label :title %><br>
-        <%= f.text_field :title, id: "title",placeholder: "　　　　タイトルを入力してください" %>
+        <%= f.text_field :title, id: "title",placeholder: "タイトルを入力してください" %>
         <%= f.hidden_field :check, value: "false"%>
     </div>
-    <div class="posts_form_btn"><%= f.submit "作成する" ,id: "submit" %></div>
+    <div class="posts_form_btn"><%= f.submit "作成" ,id: "submit" %></div>
   </div>
 <% end %>

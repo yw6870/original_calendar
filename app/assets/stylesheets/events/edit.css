@@ -1,7 +1,6 @@
 .event-edit-main {
   width: 100%;
   min-width: 800px;
-  height: calc(100vh-20px);
   background-color: #ffffff;
   display: flex;
   justify-content: center;

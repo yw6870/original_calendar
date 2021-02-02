@@ -1,5 +1,13 @@
+.posts-form {
+  margin: 0;
+  padding: 0;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+}
+
 .posts-list {
-  margin-top: 130px;
+  margin-top: 120px;
   height: calc(100vh - 150px);
   overflow: scroll;
 }

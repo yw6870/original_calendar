@@ -17,7 +17,7 @@
  
 * {
   box-sizing: border-box;
-  /* border :solid black 1px; */
+  border :solid black 1px;
 }
 
 body {
@@ -29,4 +29,469 @@ body {
 
 main {
   flex: 1;
+}
+
+@media (max-width: 600px) {
+  /* header ↓↓↓ */
+  header {
+    width: 100%;
+    padding: 0;
+  }
+  .nav__left {
+    position: relative;
+  }
+  .logo {
+    width: 1.5rem;
+    position: absolute;
+    top: 4px;
+  }
+  .logo_title {
+    font-size: 0.5rem;
+    padding-left: 26px;
+  }
+  .nav__logout {
+    padding: 0;
+  }
+  .nav__btn {
+    padding: 0;
+    margin: 0;
+  }
+  /* header ↑↑↑ */
+
+  /* footer ↓↓↓ */
+  .footer {
+    width: 100%;
+    margin: 0;
+  }
+  /* footer ↑↑↑ */
+
+  /* registration-new ↓↓↓ */
+  .registration-main {
+    width: 100%;
+    min-width: 0px;
+    height: auto;
+  }
+  .form-header {
+    height: auto;
+  }
+  .form-header-text {
+    font-size: 1rem;
+  }
+  .form-group {
+    width: 100%;
+    font-size: 1rem;
+  }
+  /* registration-new ↑↑↑ */
+
+  /* registration-edit ↓↓↓ */
+  /* registration-edit ↑↑↑ */
+
+  /* session-new ↓↓↓ */
+  /* session-new ↑↑↑ */
+
+  /* event-index ↓↓↓ */
+  .wrapper {
+    height: auto;
+    overflow: scroll;
+    padding: 0px 0px 0px 20px;
+  }
+  .event-calendar {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  aside {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+  }
+  #memo-icon {
+    width: 30px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(-1, 1);
+    filter: invert(100%);
+  }
+  aside button {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 30px;
+    height: 70px;
+    margin: 0;
+    border: none;
+    outline:none;
+  }
+  /* event-index ↑↑↑ */
+
+  /* weather ↓↓↓ */
+  .weather-forecast {
+    overflow: scroll;
+    width: 100%;
+  }
+  .weather-title {
+    display: inline-block;
+    margin: 0;
+    color: #80786d;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: fantasy;
+  }
+  .weather {
+    display: flex;
+    justify-content: space-between;
+  }
+  .weather-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7rem;
+    margin: 0 10px;
+  }
+  .weather-report p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .weather-icon {
+    height: 70px;
+    width : 70px;
+  }
+  /* weather ↑↑↑ */
+
+  /* simple-calendar ↓↓↓ */
+  .previous-btn {
+    opacity: 0.5;
+    margin-left: 0px;
+    width: 15px;
+  }
+  
+  .calendar-title-year {
+    font-size: 0.9rem;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-family: fantasy;
+    color: #ada393;
+  }
+  
+  .calendar-title-month {
+    margin-right: 40px;
+    font-size: 0.9rem;
+    font-family: fantasy;
+    color: #a59b8c;
+  }
+  
+  .new-event-btn {
+    display: inline-block;
+    padding: 5px;
+    font-size: 0.6rem;
+    color: #80786d;
+    text-decoration: none;
+    user-select: none;
+    border: 1px solid #80786d;
+    border-radius: 3px;
+    transition: 0.4s ease;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .new-event-btn:hover{
+    color: #fff;
+    background: #c9beac;
+  }
+  .simple-calendar .day {
+    height: 90px;
+    padding: 0;
+    font-size: 0.6rem;
+    font-family: fantasy;
+  }
+  /* ↓↓↓　カレンダーヘッダー曜日部分 */
+  .simple-calendar th:nth-child(1):before {
+    font-size: 0.5rem;
+    content: "Mon";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(2):before {
+    font-size: 0.5rem;
+    content: "Tue";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(3):before {
+    font-size: 0.5rem;
+    content: "Wed";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(4):before {
+    font-size: 0.5rem;
+    content: "Thu";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(5):before {
+    font-size: 0.5rem;
+    content: "Fri";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(6):before {
+    font-size: 0.5rem;
+    /* color: rgb(2, 114, 250); */
+    content: "Sat";
+    font-family: fantasy;
+  }
+  .simple-calendar th:nth-child(7):before {
+    font-size:  0.5rem;
+    /* color: rgb(250, 2, 2); */
+    content: "Sun";
+    font-family: fantasy;
+  }
+  .calendar-event-title {
+    text-decoration: none;
+    font-size: 0.3rem;
+    color: #000;
+    padding: 0px;
+    margin: 0 0;
+    border-left: 0px solid #caf3fe;
+    border-bottom: 1px solid #afeeff;
+    border-radius: 0px;
+  }
+  .calendar-event-title-li {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  /* simple-calendar ↑↑↑ */
+
+  /* simple-calendar リスト ↓↓↓ */
+  .event-lists {
+    max-height: 400px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.228);
+    overflow: scroll;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .event-lists {
+    max-height: 600px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.228);
+    overflow: scroll;
+    padding-bottom: 50px;
+  }
+  
+  .event-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.228);
+  }
+  
+  .event-lists-time {
+    height: auto;
+    width: 80px;
+    color: rgba(0, 0, 0, 0.372);
+    display: inline-block;
+    vertical-align: middle; 
+    font-size: 0.5rem;
+  }
+  
+  .event-lists-time p  {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .event-time-rotate {
+    text-align: center;
+    transform:rotate(90deg); 
+  }
+  
+  .event-list-title {
+    margin: 0;
+    width: 50px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    white-space: pre-wrap;
+    overflow: scroll;
+  }
+  
+  .event-list-title a {
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.6rem;
+  }
+  
+  .event-list-content {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle; 
+    width: 50%;
+    white-space: pre-wrap;
+    overflow: scroll;
+  }
+  
+  .event-list-content a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.6rem;
+  }
+  /* simple-calendar リスト ↑↑↑ */
+
+  /* event-new ↓↓↓ */
+  .event-new-main {
+    width: 100%;
+    min-width: 0px;
+    height: calc(100vh-20px);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .event-new-wrap {
+    width: 90%;
+    padding-bottom: 70px;
+  }
+  
+  .event-new-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .content-input-default {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 200px;
+    padding: 10px 16px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .event-new-time-form-group {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .select-time-title {
+    margin: 0 auto;
+    padding: 15px 0px;
+  }
+  
+  .select-time-title {
+    height: 50px;
+  }
+  .datetime-select {
+    width: 88px;
+    height: 30px;
+  }
+  /* event-new ↑↑↑ */
+
+  /* event-show ↓↓↓ */
+  .event-show-main {
+    width: 100%;
+    min-width: 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .event-show-wrap {
+    width: 90%;
+    margin: 50px 0;
+  }
+  
+  .show-event-content {
+    margin: 10px 0;
+    white-space: pre-wrap;
+  }
+  
+  .show-event-content span {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 3px solid rgb(214, 214, 214);
+    font-size: 1.2rem;
+  }
+  
+  .show-event-content p {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  
+  .link-btn {
+    font-size: 0.8rem;
+    margin-top: 150px;
+    width: 150px;
+  }
+  
+  .trash_box {
+    width: 20px;
+    float: right
+  }
+  /* event-show ↑↑↑ */
+
+  /* event-edit ↓↓↓ */
+  .event-edit-main {
+    width: 100%;
+    min-width: 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .event-edit-wrap {
+    width: 90%;
+    padding-bottom: 70px;
+  }
+  
+  .event-edit-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .event-edit-form-text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .event-edit-content-input-default {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+    padding: 10px 16px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .event-edit-time-form-group {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .select-time-title {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  
+  .select-time-title {
+    height: 50px;
+  }
+  .datetime-select {
+    width: 83px;
+    height: 30px;
+  }
+  
+  /* event-edit ↑↑↑ */
+
+  /* event-edit ↓↓↓ */
+  /* event-edit ↑↑↑ */
+
+  /* event-edit ↓↓↓ */
+  /* event-edit ↑↑↑ */
 }
