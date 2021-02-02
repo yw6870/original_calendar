@@ -23,19 +23,19 @@
 
 ### トップ画面
 
-![スクリーンショット 2021-01-26 12 04 04](https://user-images.githubusercontent.com/68420090/105794810-1fb8b600-5fcf-11eb-8e20-13ae7a91620d.png)
+![スクリーンショット 2021-02-03 2 57 15](https://user-images.githubusercontent.com/68420090/106642538-d1f20e00-65cb-11eb-94c8-a08c1089acfe.png)
 
 ### ユーザー登録画面
 
-![スクリーンショット 2021-01-26 12 06 51](https://user-images.githubusercontent.com/68420090/105794846-2f37ff00-5fcf-11eb-8811-42f0c63ef274.png)
+![スクリーンショット 2021-02-03 2 55 55](https://user-images.githubusercontent.com/68420090/106642586-e33b1a80-65cb-11eb-8a1f-0f7bb78c4636.png)
 
 ### イベント作成画面
 
-![スクリーンショット 2021-01-26 12 04 33](https://user-images.githubusercontent.com/68420090/105794915-4e369100-5fcf-11eb-9fd2-220e5a640b5a.png)
+![スクリーンショット 2021-02-03 2 57 53](https://user-images.githubusercontent.com/68420090/106642657-fe0d8f00-65cb-11eb-9703-77e09f8bab4f.png)
 
 ### タスク管理画面
 
-![スクリーンショット 2021-01-26 12 05 59](https://user-images.githubusercontent.com/68420090/105794994-71f9d700-5fcf-11eb-843f-457a907e9006.png)
+![スクリーンショット 2021-02-03 2 58 34](https://user-images.githubusercontent.com/68420090/106642733-14b3e600-65cc-11eb-9e17-d4e6f7062cf9.png)
 
 # 工夫したポイント
 
