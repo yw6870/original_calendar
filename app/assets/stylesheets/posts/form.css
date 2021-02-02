@@ -4,13 +4,13 @@
 
 .posts_form_title #title {
   height: 40px;
-  width: 300px;
+  width: 230px;
 }
 
 .posts_form_btn #submit {
-  width: 80px;
+  width: 50px;
   height: 40px;
   position: absolute;
   top: 0px;
-  left: 320px;
+  left: 250px;
 }

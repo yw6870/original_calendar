@@ -5,11 +5,12 @@ function check() {
 
   asideButton.addEventListener('click', function() {
 
-    if (aside.getAttribute("style") == "left: -450px;") {
+    if (aside.getAttribute("style") == "left: -350px;") {
       aside.setAttribute("style", "left: 0;")
     } else {
-      aside.setAttribute("style", "left: -450px;")
+      aside.setAttribute("style", "left: -350px;")
     }
-  })
+    
+  });
 }
 setInterval(check, 700);

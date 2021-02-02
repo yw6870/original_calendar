@@ -1,5 +1,6 @@
 .weather-forecast {
   margin-bottom: 20px;
+  overflow: scroll;
 }
 
 .weather-title {
@@ -26,6 +27,7 @@
 
 .weather-report p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 70px;
 }
 
 .weather-icon {

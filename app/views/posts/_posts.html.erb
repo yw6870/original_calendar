@@ -2,7 +2,7 @@
   <% posts.each do |post| %>
     <li>
     <%= form_with model: @post, url: post_path(post), method: :put, remote: true do |f| %>
-        <%# <%= f.hidden_field :title, value: post.title %>
+        <%= f.hidden_field :title, value: post.title %>
         <% if post.check == false %>
             <%= f.hidden_field :check, value: "true" %>
             <%= image_submit_tag "check_box.png", id: "check" %>
