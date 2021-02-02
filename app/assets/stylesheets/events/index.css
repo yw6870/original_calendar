@@ -17,15 +17,6 @@ aside {
   position: fixed;
 }
 
-.posts-form {
-  margin: 0;
-  padding: 0;
-  top: 30px;
-  left: 30px;
-  position: absolute;
-}
-
-
 #memo-icon {
   width: 40px;
   position: absolute;
