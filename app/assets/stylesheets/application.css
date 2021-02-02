@@ -88,7 +88,7 @@ main {
     background: #ffffff;
     border: 1px solid #80786d;
     color: #80786d;
-    line-height: 48px;
+    line-height: 60px;
     font-size: 1rem;
     cursor: pointer;
     padding: 5px;
@@ -142,6 +142,48 @@ main {
     outline:none;
   }
   /* event-index ↑↑↑ */
+
+  /* posts ↓↓↓ */
+  .posts-form {
+    margin: 0;
+    padding: 0;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    font-size: 1rem;
+  }
+  
+  .posts-list {
+    margin-top: 120px;
+    height: calc(100vh - 150px);
+    overflow: scroll;
+  }
+  
+  .posts-list li {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .posts_lists_title {
+    font-size: 1rem;
+    color: white;
+    margin-right: 60px;
+    overflow: scroll;
+  }
+  
+  .posts_trash_box {
+    width: 15px;
+  }
+  
+  #check {
+    width: 20px;
+    opacity: 0.8;
+    outline: none;
+    margin-right: 10px;
+  }
+  /* posts ↑↑↑ */
 
   /* weather ↓↓↓ */
   .weather-forecast {
@@ -507,6 +549,5 @@ main {
   /* event-edit ↓↓↓ */
   /* event-edit ↑↑↑ */
 
-  /* event-edit ↓↓↓ */
-  /* event-edit ↑↑↑ */
+
 }
