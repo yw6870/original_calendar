@@ -22,6 +22,7 @@ class EventsController < ApplicationController
   end
 
   def create
+    # binding.pry
     @event = Event.new(event_params)
 
     respond_to do |format|
@@ -61,6 +62,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:title, :content, :start_time, :end_time).merge(user_id: current_user.id)
+    params.require(:event).permit(:title, :content, :start_time, :end_time, :label_color).merge(user_id: current_user.id)
   end
 end

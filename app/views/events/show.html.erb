@@ -17,6 +17,15 @@
       <p><%= @event.content %></p>
     </div>
 
+    <div class="show-event-content">
+      <span>label_color：</span>
+      <% if @event.label_color == "white" %>
+        <p><span class="label_color_<%= @event.label_color %>">◯</span>：<%= @event.label_color %></p>
+      <% else %>
+        <p><span class="label_color_<%= @event.label_color %>">●</span>：<%= @event.label_color %></p>
+      <% end %>
+    </div>
+
     <div class="link-btn">
       <%= link_to 'Edit', edit_event_path(@event) %> |
       <%= link_to 'Back', events_path %>  |

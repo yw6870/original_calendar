@@ -10,8 +10,7 @@
     <%= render partial: "calendar", locals: {events: @events} %>
   </div>
 
-  <div class="event-lists-header">
-  </div>
+
   <div class="event-lists">
     <% @eventLists.each do |event| %>
     <div class="event-list">
@@ -22,7 +21,11 @@
         <p><%= l event.end_time, format: :yearmonth %></p>
         <p><%= l event.end_time, format: :short %></p>
       </div>
-      <p class="event-list-title"><%= link_to event.title, event_path(event.id)%></p>
+      <% if event.label_color == "white" %>
+        <p class="event-list-title"><span class="<%= event.label_color %>">◯</span>  <%= link_to event.title, event_path(event.id)%></p>
+      <% else %>
+        <p class="event-list-title"><span class="<%= event.label_color %>">●</span>  <%= link_to event.title, event_path(event.id)%></p>
+      <% end %>
       <p class="event-list-content"><%= link_to event.content, event_path(event.id)%></p>
     </div>
     <% end %>
