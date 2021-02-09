@@ -15,7 +15,7 @@
   border: 1px solid rgba(116, 116, 116, 0.105);
   font-family: fantasy;
 }
-/* ↓↓↓　カレンダーヘッダー曜日部分 */
+/* ↓↓↓ カレンダーヘッダー曜日部分 */
 .simple-calendar th {
   font-size: 0;
   border: 1px solid rgba(116, 116, 116, 0.16);
@@ -58,7 +58,7 @@
   content: "Sun";
   font-family: fantasy;
 }
-/* ↑↑↑　カレンダーヘッダー曜日部分 */
+/* ↑↑↑ カレンダーヘッダー曜日部分 */
 
 
 .simple-calendar .wday-6 {
@@ -129,14 +129,45 @@
 .calendar-event-title-li {
   list-style: none;
   padding-inline-start: 10px;
+  font-size: 15px;
+}
+
+.white {
+}
+
+.red {
+  color: rgb(255, 156, 174);
+}
+
+.pink {
+  color: rgb(255, 209, 240);
+}
+
+.orange {
+  color: rgb(252, 208, 133);
+}
+
+.green {
+  color: rgb(184, 255, 196);
+}
+
+.blue {
+  color: rgb(164, 218, 250);
+}
+
+.purple {
+  color: rgb(217, 164, 250);
+}
+
+.brown {
+  color: rgb(194, 177, 157);
 }
 
 .calendar-event-title {
+  vertical-align: text-top;
   text-decoration: none;
   font-size: 13px;
   color: #000;
-  padding-left: 4px;
-  border-left: 9px solid #caf3fe;
   border-radius: 4px;
 }
 
@@ -175,7 +206,6 @@
 .event-list-title {
   margin: 0 30px;
   width: 140px;
-  text-align: center;
   display: inline-block;
   vertical-align: middle;
   white-space: pre-wrap;

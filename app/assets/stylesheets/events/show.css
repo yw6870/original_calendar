@@ -28,6 +28,37 @@
   font-size: 15px;
 }
 
+.label_color_white {
+}
+
+.label_color_red {
+  color: rgb(255, 156, 174);
+}
+
+.label_color_pink {
+  color: rgb(255, 209, 240);
+}
+
+.label_color_orange {
+  color: rgb(252, 208, 133);
+}
+
+.label_color_green {
+  color: rgb(184, 255, 196);
+}
+
+.label_color_blue {
+  color: rgb(164, 218, 250);
+}
+
+.label_color_purple {
+  color: rgb(217, 164, 250);
+}
+
+.label_color_brown {
+  color: rgb(194, 177, 157);
+}
+
 .link-btn {
   margin-top: 150px;
   width: 150px;

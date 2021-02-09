@@ -3,7 +3,12 @@
 
   <ul class="calendar-event-title-li">
     <% events.each do |event| %>
-      <li><%= link_to event.title, event_path(event.id), class: "calendar-event-title" %></li>
+      <% if event.label_color == "white" %>
+        <li><span class="<%= event.label_color %>">◯</span> <%= link_to event.title, event_path(event.id), class: "calendar-event-title" %></li>
+      <% else %>
+        <li><span class="<%= event.label_color %>">●</span> <%= link_to event.title, event_path(event.id), class: "calendar-event-title" %></li>
+      <% end %>
+      
     <% end %>
   </ul>
 <% end %>
