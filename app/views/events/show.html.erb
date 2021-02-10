@@ -20,9 +20,9 @@
     <div class="show-event-content">
       <span>label_color：</span>
       <% if @event.label_color == "white" %>
-        <p><span class="label_color_<%= @event.label_color %>">◯</span>：<%= @event.label_color %></p>
+        <p class="label_color_<%= @event.label_color %>">◯</p><p>：<%= @event.label_color %></p>
       <% else %>
-        <p><span class="label_color_<%= @event.label_color %>">●</span>：<%= @event.label_color %></p>
+        <p class="label_color_<%= @event.label_color %>">●</p><p>：<%= @event.label_color %></p>
       <% end %>
     </div>
 
