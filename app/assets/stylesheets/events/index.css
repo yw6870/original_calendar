@@ -13,17 +13,20 @@
 /* カレンダーラベル ↓↓↓ */
 .simple-calendar-labels {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .simple-calendar-labels p {
-  display: inline-block;
-  margin: 10px;
+  margin: 0 5px;
   font-size: 13px;
   color: rgb(170, 170, 170);
 }
 
-.label-edit-btn {
-  float: right;
+.simple-calendar-labels .label-edit-btn {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(167, 167, 167);
 }
 /* カレンダーラベル ↑↑↑ */
 

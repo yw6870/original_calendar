@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="label-form">
+    <%# <%= form_with model: @label, data: {remote: true} do |f| %> %>
+    <%= form_with model: @label, local: true do |f| %>
+    <p><span style="">◯</span><%= f.text_field :white, id: "",placeholder: "white" %></p>
+    <p><span style="color: rgb(255, 156, 174)">●</span><%= f.text_field :red, id: "",placeholder: "red" %></p>
+    <p><span style="color: rgb(255, 209, 240)">●</span><%= f.text_field :pink, id: "",placeholder: "pink" %></p>
+    <p><span style="color: rgb(252, 208, 133)">●</span><%= f.text_field :orange, id: "",placeholder: "orange" %></p>
+    <p><span style="color: rgb(184, 255, 196)">●</span><%= f.text_field :green, id: "",placeholder: "green" %></p>
+    <p><span style="color: rgb(164, 218, 250)">●</span><%= f.text_field :blue, id: "",placeholder: "blue" %></p>
+    <p><span style="color: rgb(217, 164, 250)">●</span><%= f.text_field :purple, id: "",placeholder: "purple" %></p>
+    <p><span style="color: rgb(194, 177, 157)">●</span><%= f.text_field :brown, id: "",placeholder: "brown" %></p>
+    <p><%= f.submit "更新" ,id: "submit", class: "label-edit-btn" %></div>
+    <% end %>
+  </div>
+</div>

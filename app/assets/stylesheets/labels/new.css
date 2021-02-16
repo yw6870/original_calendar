@@ -1,0 +1,30 @@
+
+.label-form {
+  display: flex;
+  justify-content: center;
+}
+
+.label-form input {
+  margin: 20px 20px;
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(170, 170, 170);
+}
+
+.label-form .label-edit-btn {
+  width: 80%;
+  background: #ffffff;
+  border: 1px solid #80786d;
+  color: #80786d;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  transition: 0.4s ease;
+}
+.label-edit-btn:hover{
+  color: #fff;
+  background: #c9beac;
+}

@@ -1,7 +1,11 @@
 class LabelsController < ApplicationController
   def index
   end
-  
+
+  def new
+    @label = Label.new
+  end
+
   def create
   end
 

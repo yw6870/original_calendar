@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_26_013853) do
+ActiveRecord::Schema.define(version: 2021_02_10_071036) do
 
   create_table "events", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -22,6 +22,21 @@ ActiveRecord::Schema.define(version: 2021_01_26_013853) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "labels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "white", default: "white", null: false
+    t.string "red", default: "red", null: false
+    t.string "pink", default: "pink", null: false
+    t.string "orange", default: "orange", null: false
+    t.string "green", default: "green", null: false
+    t.string "blue", default: "blue", null: false
+    t.string "purple", default: "purple", null: false
+    t.string "brown", default: "brown", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_labels_on_user_id"
   end
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -48,5 +63,6 @@ ActiveRecord::Schema.define(version: 2021_01_26_013853) do
   end
 
   add_foreign_key "events", "users"
+  add_foreign_key "labels", "users"
   add_foreign_key "posts", "users"
 end
