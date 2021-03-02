@@ -15,7 +15,7 @@ end
 10.times do |n|
   title = Faker::Food.sushi
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -29,7 +29,7 @@ end
 10.times do |n|
   title = Faker::JapaneseMedia::Conan.character 
   content = Faker::JapaneseMedia::Conan.vehicle
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -43,7 +43,7 @@ end
 10.times do |n|
   title = Faker::JapaneseMedia::Doraemon.character
   content = Faker::JapaneseMedia::Doraemon.gadget
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -57,7 +57,7 @@ end
 10.times do |n|
   title = Faker::Creature::Animal.name
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -71,7 +71,7 @@ end
 10.times do |n|
   title = Faker::Food.dish
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -85,7 +85,7 @@ end
 10.times do |n|
   title = Faker::Food.ingredient
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -99,7 +99,7 @@ end
 10.times do |n|
   title = Faker::Food.vegetables
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -113,7 +113,7 @@ end
 10.times do |n|
   title = Faker::Color.color_name
   content = Faker::JapaneseMedia::OnePiece.akuma_no_mi
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Event.create!(
     title: title,
     content: content,
@@ -125,9 +125,9 @@ end
 end
 
 
-100.times do |n|
+10.times do |n|
   title = Faker::Food.fruits
-  time = Faker::Date.in_date_period(month: 2)
+  time = Faker::Date.in_date_period
   Post.create!(
     title: title,
     check: 1,
