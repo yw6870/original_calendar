@@ -9,6 +9,7 @@ class EventsController < ApplicationController
     @eventLists = Event.where(end_time: Date.today.all_day ).or(Event.where("end_time > ?", Date.today)).order("start_time ASC")
     @posts = Post.all.order("created_at DESC")
     @post = Post.new
+    @label = Label.find(1)
   end
 
   def show

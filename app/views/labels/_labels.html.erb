@@ -1,15 +1,23 @@
   <div class="simple-calendar-labels">
-    <p><span style="">◯</span>white</p>
-    <p><span style="color: rgb(255, 156, 174)">●</span>red</p>
-    <p><span style="color: rgb(255, 209, 240)">●</span>pink</p>
-    <p><span style="color: rgb(252, 208, 133)">●</span>orange</p>
-    <p><span style="color: rgb(184, 255, 196)">●</span>green</p>
-    <p><span style="color: rgb(164, 218, 250)">●</span>blue</p>
-    <p><span style="color: rgb(217, 164, 250)">●</span>purple</p>
-    <p><span style="color: rgb(194, 177, 157)">●</span>brown</p>
-    <% if %>
+    <% if Label.blank?%>
+      <p><span style="">◯</span>white</p>
+      <p><span style="color: rgb(255, 156, 174)">●</span>red</p>
+      <p><span style="color: rgb(255, 209, 240)">●</span>pink</p>
+      <p><span style="color: rgb(252, 208, 133)">●</span>orange</p>
+      <p><span style="color: rgb(184, 255, 196)">●</span>green</p>
+      <p><span style="color: rgb(164, 218, 250)">●</span>blue</p>
+      <p><span style="color: rgb(217, 164, 250)">●</span>purple</p>
+      <p><span style="color: rgb(194, 177, 157)">●</span>brown</p>
       <p><%= link_to "編集", new_label_path, class: "label-edit-btn" %></p>
     <% else %>
-      <p><%= link_to "編集", new_label_path, class: "label-edit-btn" %></p>
+      <p><span style="">◯</span><%= @label %></p>
+      <p><span style="color: rgb(255, 156, 174)">●</span>red</p>
+      <p><span style="color: rgb(255, 209, 240)">●</span>pink</p>
+      <p><span style="color: rgb(252, 208, 133)">●</span>orange</p>
+      <p><span style="color: rgb(184, 255, 196)">●</span>green</p>
+      <p><span style="color: rgb(164, 218, 250)">●</span>blue</p>
+      <p><span style="color: rgb(217, 164, 250)">●</span>purple</p>
+      <p><span style="color: rgb(194, 177, 157)">●</span>brown</p>
+      <p><%= link_to "編集", edit_label_path(1), class: "label-edit-btn" %></p>
     <% end %>
   </div>
