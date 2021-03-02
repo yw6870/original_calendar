@@ -10,6 +10,7 @@
     <%= render partial: "calendar", locals: {events: @events} %>
   </div>
 
+  <%= render 'labels/labels' %>
 
   <div class="event-lists">
     <% @eventLists.each do |event| %>

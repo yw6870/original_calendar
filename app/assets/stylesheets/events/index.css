@@ -3,11 +3,32 @@
   overflow: scroll;
   padding: 50px 30px 60px 70px;
 }
-
+/* カレンダー表示部分 ↓↓↓ */
 .event-calendar {
   width: auto;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
+/* カレンダー表示部分 ↑↑↑ */
+
+/* カレンダーラベル ↓↓↓ */
+.simple-calendar-labels {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simple-calendar-labels p {
+  margin: 0 5px;
+  font-size: 13px;
+  color: rgb(170, 170, 170);
+}
+
+.simple-calendar-labels .label-edit-btn {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(167, 167, 167);
+}
+/* カレンダーラベル ↑↑↑ */
 
 aside {
   background-color: rgba(0, 0, 0, 0.5);
