@@ -11,6 +11,7 @@ class LabelsController < ApplicationController
   def create
     @label = Label.new(label_params)
     if @label.save
+      redirect_to root_path
     else
       render :new
     end
