@@ -54,19 +54,16 @@
 }
 
 .label_color label {
-  font-size: 30px;
+  font-size: 1em;
   margin: 30px;
-  position: relative;
 }
 
 .label_color_radio_btn {
-  margin-right: 15px;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
 }
 
 .label_color span {
-  position: absolute;
   user-select: none;
 }

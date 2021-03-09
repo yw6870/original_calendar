@@ -17,6 +17,7 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
+    @label = Label.find(1)
   end
 
   def edit

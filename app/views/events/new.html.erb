@@ -44,38 +44,73 @@
         <label class="form-text">label_color</label>
       </div>
       <div class="label_color">
-        <label>
-          <%= f.radio_button :label_color, :white, class: "label_color_radio_btn", checked: true %>
-          <span>◯</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :red , class: "label_color_radio_btn" %>
-          <span style="color: rgb(255, 156, 174)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :pink , class: "label_color_radio_btn" %>
-          <span style="color: rgb(255, 209, 240)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :orange , class: "label_color_radio_btn" %>
-          <span style="color: rgb(252, 208, 133)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :green , class: "label_color_radio_btn" %>
-          <span style="color: rgb(184, 255, 196)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :blue , class: "label_color_radio_btn" %>
-          <span style="color: rgb(164, 218, 250)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :purple , class: "label_color_radio_btn" %>
-          <span style="color: rgb(217, 164, 250)">●</span>
-        </label>
-        <label>
-          <%= f.radio_button :label_color, :brown , class: "label_color_radio_btn" %>
-          <span style="color: rgb(194, 177, 157)">●</span>
-        </label>
+        <% if Label.blank?%>
+          <label>
+            <%= f.radio_button :label_color, :white, class: "label_color_radio_btn", checked: true %>
+            <p><span style="">◯</span>white</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :red , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(255, 156, 174)">●</span>red</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :pink , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(255, 209, 240)">●</span>pink</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :orange , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(252, 208, 133)">●</span>orange</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :green , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(184, 255, 196)">●</span>green</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :blue , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(164, 218, 250)">●</span>blue</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :purple , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(217, 164, 250)">●</span>purple</p>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :brown , class: "label_color_radio_btn" %>
+            <p><span style="color: rgb(194, 177, 157)">●</span>brown</p>
+          </label>
+        <% else %>
+          <label>
+            <%= f.radio_button :label_color, :white, class: "label_color_radio_btn", checked: true %>
+            <span><span style="">◯</span><%= @label.white %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :red , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(255, 156, 174)">●</span><%= @label.red %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :pink , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(255, 209, 240)">●</span><%= @label.pink %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :orange , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(252, 208, 133)">●</span><%= @label.orange %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :green , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(184, 255, 196)">●</span><%= @label.green %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :blue , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(164, 218, 250)">●</span><%= @label.blue %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :purple , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(217, 164, 250)">●</span><%= @label.purple %></span>
+          </label>
+          <label>
+            <%= f.radio_button :label_color, :brown , class: "label_color_radio_btn" %>
+            <span><span style="color: rgb(194, 177, 157)">●</span><%= @label.brown %></span>
+          </label>
+        <% end %>
       </div>
     </div>
 
